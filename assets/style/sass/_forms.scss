@@ -1,0 +1,142 @@
+// 客製化checkbox 1
+/* The container */
+.chk-container {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;    
+    // font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .chk-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .check-mark {
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .chk-container:hover input ~ .check-mark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .chk-container input:checked ~ .check-mark {
+    background-color: $deep-green;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .chk-container input:checked ~ .check-mark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .chk-container .check-mark:after {
+    left: 5px;
+    top: 2px;
+    width: 7px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+//- 客製化 CheckBox 2
+.checkBoxArea {
+    margin: 0;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .input {
+            margin-right: 5px;
+        }
+        .label {
+            margin-bottom: 0;
+        }
+        //- 客製化藍色的框
+        .selectCheckBox {
+            position: relative;
+            margin-right: 5px;
+            border: 2px solid #000000;
+            background-color: #FFFFFF;
+            width: 16px;
+            height: 16px;
+            transition: all .2s;
+            text-align: center;
+            &::before,
+            &::after {
+                position: absolute;
+                width: 4px;
+                background-color: #000000;
+                box-sizing: border-box;
+                display: inline-block;
+                border-radius: 5px;
+                transition: opacity ease .5;
+                /* 設置轉換原點座標 */
+                transform-origin:left top;
+            }
+            /* 短邊 */
+            &::before {
+                left: 0;
+                top: 4px;
+                transform: rotate(-45deg);
+                z-index: 2;
+            }
+            /* 長邊 */
+            &::after {
+                left: 6px;
+                top: 10px;
+                transform: rotate(-135deg);
+                z-index: 1;
+            }
+        }
+        //- 注意 HTML 那邊的隱藏 Input 一定要在 Label 上面
+        .input[type="checkbox"]:checked+.selectCheckBox::before {
+            content: '';
+            height: 8px;
+            animation: do_before_check 0.2s ease 0s forwards;
+        }
+        .input[type="checkbox"]:checked+.selectCheckBox::after {
+            content: '';
+            height: 18px;
+            animation: do_after_check 0.4s ease 0s forwards;
+        }
+    }
+}
+// 客製化select up/down key icon
+.custom-select{
+    background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 16 16'%3e%3cpath fill='%23343a40' d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/12px 12px;
+}

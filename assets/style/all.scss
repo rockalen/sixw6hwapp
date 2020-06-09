@@ -1,0 +1,43 @@
+// bootstrap scss
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "sass/variables"; // 複製一份 variable 來覆蓋
+@import "../../../node_modules/bootstrap/scss/mixins";
+// 放入vendors
+@import "sass/type";
+$font-sizes: (48, 36, 32, 24, 20, 16, 14, 12, 10);
+@import "sass/font-sizes";
+// @import "sass/pagination";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "sass/component/modal";
+@import "sass/component/cart-list";
+@import "sass/component/breadcrumb";
+@import "sass/component/pay-list";
+@import "sass/component/navbar";
+@import "sass/component/carousel";
+@import "sass/forms";
+@import "sass/layout/index";
+@import "sass/layout/checkout-end";
+@import "sass/layout/product";
+@import "sass/layout/product-detail";
+
+// 暫時存放區
+// @include media-breakpoint-down(sm) {
+//         column-count: 2;
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

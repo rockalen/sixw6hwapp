@@ -1,0 +1,6 @@
+
+.path-icon{
+    .breadcrumb-item + .breadcrumb-item::before{
+        content: ">";
+    }
+}

@@ -1,0 +1,16 @@
+// end page layout page scss
+.end-bg{
+    
+    height: 100vh;
+    position: relative;
+}
+
+.end-bg-cover{
+    position: absolute;    
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    background-image: url(../images/annie-spratt-TEhfafMgFSM-unsplash.jpg);
+}

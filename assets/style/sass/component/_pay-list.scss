@@ -1,0 +1,27 @@
+$pay-list-bg:#F2F2F2;
+.pay-list{
+    background-color: $pay-list-bg;
+    p{
+        margin: 0;
+    }
+    li{
+        div{
+            width: 100%;
+            // padding-left: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       
+        display: flex;
+    }
+    img{
+        height: 48px;
+        width: 48px;
+        object-fit: cover;
+    }
+}
+
+.pay-list-btn{
+    background: $pay-list-bg;
+}

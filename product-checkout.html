@@ -1,0 +1,152 @@
+---
+title: 產品付款
+layout: ./app/layout-third-layer.ejs
+engine: ejs
+current: index
+---
+<section class="content container">
+    <!-- pay list button -->
+    <div class="row justify-content-center">
+        <div class="col-12 d-md-none">
+            <a class="pay-list-btn btn btn-sec-2 btn-lg d-flex d-md-none justify-content-between align-items-center" data-toggle="collapse" href="#collapse-pay-list" role="button" aria-expanded="true" aria-controls="collapse-pay-list">
+                
+                    <p class="mb-0">Order Summary</p>
+                    <p class="mb-0 font-weight-bold">
+                        NT$4,760
+                        <span class="pay-list-arrow_down material-icons align-middle text-main">
+                            keyboard_arrow_down
+                        </span>
+                    </p>
+             </a>
+        </div>
+    </div>     
+    <!-- 產品付款主要內容 -->
+    <div class="row flex-column-reverse flex-md-row justify-content-center">
+        <!-- pay 麵包屑 -->
+        <div class="col-12 col-md-10 order-1 order-md-1 mt-4 mt-md-0">            
+            <nav aria-label="breadcrumb" class="path-icon">
+                <ol class="breadcrumb bg-transparent p-0">
+                <li class="breadcrumb-item"><a href="#" class="text-main">Cart</a></li>
+                <li class="breadcrumb-item"><a href="#" class="font-weight-bold">Information</a></li>
+                <li class="breadcrumb-item active" aria-current="page">PaymentHome</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- pay form表單 -->
+        <div class="col-12 col-md-6 order-md-2">           
+            <form>
+                <h5 class="Shipping-addr">Contact information</h5>
+                <div class="form-group mb-2">
+                  <!-- <label for="InputEmail1">Contact information</label> -->
+                  <input type="email" class="form-control form-control-lg" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">                  
+                </div>
+                <!-- <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div> -->
+                
+                <!-- <div class="checkBoxArea cursor-pointer">
+                    <div class="checkBoxArea__content cursor-pointer">
+                      <input class="input d-none" type="checkbox" id="customAccess_edit_1" name="customAccess" value="Coupon" checked>
+                      <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_edit_1"></label>
+                      <label class="label cursor-pointer" for="customAccess_edit_1">lecture</label>
+                    </div>
+                </div> -->
+                <div class=" mb-5">
+                    
+                    <label class="chk-container" for="Check1"> <small id="emailHelp" class="form-text text-muted m-0">Keep me up to date on news and special offers</small>
+                        <input type="checkbox" checked="checked" id="Check1">
+                        <span class="check-mark"></span>
+                    </label>
+                  <!-- <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label align-text-top" for="Check1">
+                        <small id="emailHelp" class="form-text text-muted m-0">Keep me up to date on news and special offers</small>
+                    </label> -->
+                </div>
+                <h5 class="Shipping-addr">Shipping address</h5>
+                <div class="form-row">
+                    
+                    <div class="col-12 col-md mb-2" >
+                      <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-md mb-2">
+                      <input type="text" class="form-control form-control-lg" placeholder="Phone">
+                    </div>
+                    
+                </div>
+                <div class="form-row">                   
+                    <div class="form-group col-12 col-md mb-2">                     
+                      <select id="inputCountry" class="custom-select custom-select-lg">
+                        <option selected>Country/Region</option>
+                        <option>Taiwan</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-12 col-md mb-2">
+                        <select id="inputCity" class="custom-select custom-select-lg">
+                            <option selected>City</option>
+                            <option>Taipei</option>
+                            <option>Hualien</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row mb-4 mb-md-5">                    
+                    <div class="col-12" >
+                        <input type="text" class="form-control form-control-lg" placeholder="Address">
+                    </div>  
+                </div>
+                <div class="form-row align-items-center">
+                     <div class="col-12 col-md order-md-2">
+                        <a type="submit" href="product-checkout-2.html" class="btn btn-lg btn-main w-100 font-weight-bold">Continue to payment</a>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-left">
+                        <a href="product-detail.html" class="nav-link text-main py-3 px-0">
+                            <span class="material-icons align-middle">
+                            keyboard_arrow_left
+                            </span>
+                            Return to cart
+                        </a>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+        <!-- pay list -->
+        <div class="col-12 col-md-4 order-2 order-md-3">            
+            <ul class="list-unstyled pay-list p-3 p-md-4 collapse d-md-block" id="collapse-pay-list">
+                <li class="mb-3">
+                    <img src="./assets/images/img-1.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Tatami Cup ×1</p>
+                        <p>NT$1,080</p>
+                    </div>
+                </li>
+                <li class="mb-3">
+                    <img src="./assets/images/img-4.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Baifan Bowl ×2</p>
+                        <p>NT$3,600</p>
+                    </div>
+                </li>           
+                <li class="border-top pt-3 mb-3">                    
+                    <div>
+                        <p>Subtotal</p>
+                        <p>NT$4,680</p>
+                    </div>
+                </li>
+                <li class="mb-3">                    
+                    <div>
+                        <p>Shipping</p>
+                        <p>NT$80</p>
+                    </div>
+                </li>
+                <li class="mb-3 pt-3 border-top">                    
+                    <div class="font-size-24 font-weight-bold">
+                        <p>Total</p>
+                        <p>NT$4,760</p>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</section>

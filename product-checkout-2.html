@@ -1,0 +1,140 @@
+---
+title: 產品付款
+layout: ./app/layout-third-layer.ejs
+engine: ejs
+current: index
+---
+<section class="content container">
+    <!-- pay list button -->
+    <div class="row justify-content-center">
+        <div class="col-12 d-md-none">
+            <a class="pay-list-btn btn btn-sec-2 btn-lg d-flex d-md-none justify-content-between align-items-center" data-toggle="collapse" href="#collapse-pay-list" role="button" aria-expanded="true" aria-controls="collapse-pay-list">                
+                <p class="mb-0">Order Summary</p>
+                <p class="mb-0 font-weight-bold">
+                    NT$4,760
+                    <span class="pay-list-arrow_down material-icons align-middle text-main">
+                        keyboard_arrow_down
+                    </span>
+                </p>
+             </a>
+        </div>
+    </div>     
+    <!-- 產品付款主要內容 -->
+    <div class="row flex-column-reverse flex-md-row justify-content-center">
+        <!-- pay 麵包屑 -->
+        <div class="col-12 col-md-10 order-1 order-md-1 mt-4 mt-md-0">            
+            <nav aria-label="breadcrumb" class="path-icon">
+                <ol class="breadcrumb bg-transparent p-0">
+                <li class="breadcrumb-item"><a href="#" class="text-main">Cart</a></li>
+                <li class="breadcrumb-item"><a href="#" class="font-weight-bold">Information</a></li>
+                <li class="breadcrumb-item active" aria-current="page">PaymentHome</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- pay form表單 -->
+        <div class="col-12 col-md-6 order-md-2">           
+            <form>
+                <h5 class="Shipping-addr">Information</h5>
+                <a class="info-btn btn btn-white btn-lg border border-bottom-0 d-flex justify-content-between align-items-center collapsed" href="" data-toggle="collapse" data-target="#infoCollapse" aria-expanded="false">
+                    <p class="mb-0 mr-5">Contact</p>
+                    <p class="mb-0 flex-grow-1 d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <span class="d-none d-md-inline-block">Joanne Lin / Joanne@mail.com  / +886 912-345-678</span>
+                            <span class="d-md-none d-inline-block">Joanne@mail.com…</span>
+                        </small>
+                        <span class="info-arrow text-main material-icons">keyboard_arrow_down</span>
+                    </p>                    
+                </a>
+                <div class="p-3 border border-top-0 collapse" id="infoCollapse">
+                    <p>Joanne Lin</p>
+                    <p>Joanne@mail.com</p>
+                    <p class="mb-0">+886 912-345-678</p>
+                </div>
+                <a class="info-btn btn btn-white btn-lg border d-flex justify-content-between align-items-center" href="" data-toggle="collapse" data-target="#infoCollapse">
+                    <p class="mb-0 mr-5">Ship to</p>
+                    <p class="mb-0 flex-grow-1 d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <span class="d-none d-md-inline-block">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung…</span>
+                            <span class="d-md-none d-inline-block">3F., No. 2, Ln. 1, Hello 2nd…</span>
+                        </small>
+                        <span class="info-arrow text-main material-icons">keyboard_arrow_down</span>                        
+                    </p>                    
+                </a>
+                <div class="p-3 border border-top-0 collapse" id="infoCollapse" >
+                    <p>3F., No. 2, Ln. 1, Hello 2nd Rd.,</p>
+                    <p>Woohoo Dist., Kaohsiung City 806, </p>
+                    <p class="mb-0">Taiwan</p>
+                </div> 
+                <h5 class="credit-card mt-4 mt-md-5">Credit Card</h5>
+                <div class="form-row">
+                    <div class="col-12 form-group mb-2">
+                        <input class="form-control form-control-lg" type="password" placeholder="Card number">
+                    </div>                
+                </div>
+                 <div class="form-row">
+                    <div class="col-12 form-group mb-2">
+                        <input class="form-control form-control-lg" type="text" placeholder="Name on card">
+                    </div>                
+                </div>
+                <div class="form-row">                   
+                    <div class="form-group col-12 col-md mb-2">                     
+                        <input class="form-control form-control-lg" type="text" placeholder="Expiration date (MM / YY)">
+                    </div>
+                    <div class="form-group col-12 col-md mb-2">
+                        <input class="form-control form-control-lg" type="password" placeholder="Security code">
+                    </div>
+                </div>               
+                <div class="form-row align-items-center">
+                     <div class="col-12 col-md order-md-2">
+                        <a type="submit" href="product-checkout-3.html" class="btn btn-lg btn-main w-100 font-weight-bold">Pay now</a>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-left">
+                        <a href="product-checkout.html" class="nav-link text-main py-3 px-0">
+                            <span class="material-icons align-middle">
+                            keyboard_arrow_left
+                            </span>
+                            Return to information
+                        </a>
+                    </div>                  
+                </div>
+            </form>
+        </div>
+        <!-- pay list -->
+        <div class="col-12 col-md-4 order-2 order-md-3">            
+            <ul class="list-unstyled pay-list p-3 p-md-4 collapse d-md-block" id="collapse-pay-list">
+                <li class="mb-3">
+                    <img src="./assets/images/img-1.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Tatami Cup ×1</p>
+                        <p>NT$1,080</p>
+                    </div>
+                </li>
+                <li class="mb-3">
+                    <img src="./assets/images/img-4.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Baifan Bowl ×2</p>
+                        <p>NT$3,600</p>
+                    </div>
+                </li>           
+                <li class="border-top pt-3 mb-3">                    
+                    <div>
+                        <p>Subtotal</p>
+                        <p>NT$4,680</p>
+                    </div>
+                </li>
+                <li class="mb-3">                    
+                    <div>
+                        <p>Shipping</p>
+                        <p>NT$80</p>
+                    </div>
+                </li>
+                <li class="mb-3 pt-3 border-top">                    
+                    <div class="font-size-24 font-weight-bold">
+                        <p>Total</p>
+                        <p>NT$4,760</p>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</section>

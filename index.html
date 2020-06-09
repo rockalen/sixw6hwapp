@@ -1,0 +1,99 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 首頁上方形象底圖設計 -->
+<section class="container-fluid index-bg index-md-bg mb-7 mb-md-8" >
+  <div class="row justify-content-end">
+    <div class="col-md-6 index-bg-cover">     
+    </div>
+  </div>
+  <div class="container h-100 d-flex flex-column justify-content-between justify-content-md-center px-0 px-md-gutter">
+    <div class="row d-block d-md-none">
+    </div>
+    <div class="row flex-column justify-content-center text-white text-md-dark">
+      <div class="col-md-6 text-center text-md-left">
+          <h1 class="mb-4 display-5">
+            Enjoy Your <br>Minimalist Lifestyle.
+          </h1>
+          <p class="font-size-md-24 font-size-16 font-weight-normal text-secondary mb-md-7">The best crafts in Taiwan. Get your free <br>shipping on
+            the first order.
+          </p>          
+      </div>     
+    </div>
+    <div class="row mb-4">
+       <div class="col-12 col-md-3 col-lg-2">
+        <a class="btn btn-main btn-lg w-100" href="#" role="button">Shop now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 首頁商品介紹 & 載入animate-->
+<section>
+  <ul class="list-unstyled container">
+    <li class="card row d-flex flex-md-row justify-content-between align-items-center border-0"  >
+      <div class="col-12 col-md-6 mb-3 pl-md-0" data-aos="animate__flipInY" >
+        <img src="./assets/images/index-2.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="card-body col-12 col-md-4 p-0 px-3">
+        <h4 class="card-title">Special Clays</h4>
+        <p class="card-text">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
+        <a href="#" class="nav-link text-main px-0 font-weight-bold">learn more</a>
+      </div>
+      <div class="col-md-1"></div>
+    </li>
+    <li class="card row d-flex flex-md-row-reverse justify-content-between align-items-center border-0 my-4 my-md-5">
+      <div class="col-12 col-md-6 mb-3 pr-md-0" data-aos="animate__flipInY">
+        <img src="./assets/images/index-3.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="card-body col-12 col-md-4 p-0 px-3 text-md-right">
+        <h4 class="card-title">Less is more</h4>
+        <p class="card-text">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to hold, look at, and use.</p>
+        <a href="#" class="nav-link text-main px-0 font-weight-bold">learn more</a>
+      </div>
+      <div class="col-md-1"></div>
+    </li>
+    <li class="card row d-flex flex-md-row justify-content-between align-items-center border-0 mb-7 mb-md-8" >
+      <div class="col-12 col-md-6 mb-3 pl-md-0" data-aos="animate__flipInY">
+        <img src="./assets/images/index-4.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="card-body col-12 col-md-4 p-0 px-3">
+        <h4 class="card-title">Marvelous Detail</h4>
+        <p class="card-text">In Craftsman, the art director, working with marketers, develops or creates an idea of a new creation.</p>
+        <a href="#" class="nav-link text-main px-0 font-weight-bold">learn more</a>
+      </div>
+      <div class="col-md-1"></div>
+    </li>
+  </ul>
+</section>
+<!-- 首頁個人介紹 -->
+<section class="container-fluid person-bg py-4 mb-7 mb-md-8">
+  <div class="row">
+      <div class="col-12 person-bg-cover">
+      </div>
+  </div>
+  <div class="container h-100 px-0 d-flex flex-column px-md-gutter">
+    <div class="row justify-content-between align-items-center h-100">
+        <div class="col-xl-4 d-flex align-items-md-center text-white h-50">
+          <h2>
+            “I want to make the life more simple by crafts.”
+          </h2>                                          
+        </div>
+        <div class="col-xl-3 d-flex flex-column justify-content-end justify-content-md-center text-white h-50">
+          <p class="text-white-50 mb-1">Art Director</p>
+          <h4 class="mb-3">
+            hsiao-Ming Chen
+          </h4> 
+          <ul class="list-unstyled d-flex flex-md-row mb-0">
+            <li><a href="" class="nav-link text-main p-0 pr-4 font-size-14">Instagram</a></li>
+            <li><a href="" class="nav-link text-main p-0 font-size-14">Twitter</a></li>
+          </ul>                                        
+        </div>
+    </div>
+  </div>
+</section>
